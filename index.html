@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stromix Reviews</title>
+    <link rel="stylesheet" href="_css/estilo.css">
+</head>
+<body>
+    <span id="alerta">Esta página ainda está em construção!</span>
+    <header id="cabecalho">
+        <a href="index.html" id="botao_cabecalho">
+            <hgroup id="titulos">
+                <h1 id="titulo">Stromix <span>Reviews</span></h1>
+                <h2 id="subtitulo">Meu ponto de vista de diversas coisas que compro</h2>
+            </hgroup>
+        </a>
+        <img src="_imagens/stromix_logo_3.png" alt="Logo Stromix" id="logo_sr">
+
+        
+
+    </header>
+
+    <section id="navegacao">
+        <a href="index.html"><h4>Home</h4></a>
+    </section>
+
+    <div id="corpo">
+        <h1>Produtos</h1>
+        <ul id="produtos">
+            <a href="w820bt.html" class="link_produtos">
+                <li id="w820bt"><img src="_imagens/edifier_w820bt_300x150.png" alt="Edifier W820BT">
+                    <hgroup id="nome_specs">
+                        <h2>Headphone Bluetooth - Edifier W820<sup>BT</sup></h2>
+                        <ol><b>Unidade do Condutor:</b> Drivers NdFeB de 40 mm</ol>
+                        <ol><b>Versão do Bluetooth:</b> Bluetooth V4.1</ol>
+                        <ol><b>Distância Efetiva:</b> 10M</ol>
+                        <ol><b>Microfone:</b> Sim (embutido na base do Headphone), o microfone não funciona no cabo, apenas via Bluetooth.</ol><br>
+                    </hgroup>
+                </li>
+            </a></br></br>
+            <a href="vc-g200.html" class="link_produtos">
+                <li id="vc-g200"><img src="_imagens/voxcube_vc-g200.png" alt="Vox Cube VC-G200">
+                    <hgroup id="nome_specs">
+                        <h2>Caixa de som 2.1 - VoxCube VC-G200</h2>
+                        <ol><b>Potência total:</b> 11 Watts Rms</ol>
+                        <ol>1 x Subwoofer de 5 Watts Rms e 3 polegadas</ol>
+                        <ol>2 x Caixas Auxiliares de 3 Watts Rms e 2 polegadas</ol>
+                        <ol><b>Frequência de resposta:</b> 20 - 18000Hz</ol>
+                        <ol><b>Conexão de Áudio:</b> P2</ol><br>
+                    </hgroup>
+                </li>
+            </a></br></br>
+        </ul>
+    </div>
+
+    <footer id="rodape">
+        <div id="social">
+            <a target="_blank" href="https://discord.gg/8WjyW8u" onmouseover="mostrarLegenda('Discord')" onmouseout="esconderLegenda('Discord')">
+                <img src="_imagens/discord_blue_50x50.png" alt="Discord" id="stromix_ds" class="redes_sociais">
+                <p class="legenda_redes_sociais" id="legenda_Discord"></p>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/Stromix-Reviews-106016351150399/?__cft__[0]=AZUQNKJc2M0d2KzbTvLn0vsM0KIzt4pMRLAclcwjmxi95dPUHqqwUc4BHHl5dsEA3hc0moXu9QpYTcrntrWg7--lzwrZQOlJaNyyOzAJyEdZolERSpJStGghs0_FoZI6pfyruMiV8DUYedmqiOdKzMF1kgpKp1GnzyTTfRe7-4TyXw&__tn__=kC%2CP-R" onmouseover="mostrarLegenda('Facebook')" onmouseout="esconderLegenda('Facebook')">
+                <img src="_imagens/facebook_blue_50x50.png" alt="Facebook" id="stromix_fb" class="redes_sociais">
+                <p class="legenda_redes_sociais" id="legenda_Facebook"></p>
+            </a>
+            <a target="_blank" href="https://github.com/JoaoSCoelho" onmouseover="mostrarLegenda('GitHub')" onmouseout="esconderLegenda('GitHub')">
+                <img src="_imagens/github_black_50x50.png" alt="GitHub" id="joaoscoelho_gh" class="redes_sociais">
+                <p class="legenda_redes_sociais" id="legenda_GitHub"></p>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/joao_victor.s.c/" onmouseover="mostrarLegenda('Instagram')" onmouseout="esconderLegenda('Instagram')">
+                <img src="_imagens/instagram_purple_50x50.png" alt="Instagram" id="joaovictorsc_ig" class="redes_sociais">
+                <p class="legenda_redes_sociais" id="legenda_Instagram"></p>
+            </a>
+            <a target="_blank" href="https://twitter.com/Victor26192375" onmouseover="mostrarLegenda('Twitter')" onmouseout="esconderLegenda('Twitter')">
+                <img src="_imagens/twitter_blue_50x50.png" alt="Twitter" id="victor_tt" class="redes_sociais">
+                <p class="legenda_redes_sociais" id="legenda_Twitter"></p>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCgj8kDTo0O1UUKvlkm7n49g?view_as=subscriber" onmouseover="mostrarLegenda('Youtube')" onmouseout="esconderLegenda('Youtube')">
+                <img src="_imagens/youtube_red_50x50.png" alt="Youtube" id="stromix_yt" class="redes_sociais">
+                <p class="legenda_redes_sociais" id="legenda_Youtube"></p>
+            </a>
+        </div>
+        <p>Acesse mais de nossos sites</p>
+        <p>
+            <a href="Motores/index.html" class="outros_sites">Motores</a>
+            <!--<a href="../Google_Glass/index.html" class="outros_sites">Google Glass</a>-->
+        </p>
+        <p>Copyright &copy; 2020 - By STROMIX</p>
+    </footer>
+
+    <script>
+        /*
+        function mostrarLegenda(legenda) {
+            document.querySelector(`#legenda_${legenda}`).innerHTML = legenda
+        }
+
+        function esconderLegenda(legenda) {
+            document.querySelector(`#legenda_${legenda}`).innerHTML = ' '
+        }
+        */
+    </script>
+</body>
+</html>
