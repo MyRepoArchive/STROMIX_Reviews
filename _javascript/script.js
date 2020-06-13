@@ -32,32 +32,11 @@ if(data.getUTCMonth() < 5) {
 var estado = false
 var perfil = document.querySelector('#perfil_criador')
 function abrirFecharPerfil() {
-    console.log('clicado')
     if(estado == false) {
-        console.log('abrir')
         perfil.style.display = 'block'
         estado = true
-        console.log(estado)
     } else {
-        console.log('reclicado')
         perfil.style.display = 'none'
         estado = false
-        console.log(estado)
     }
-}
-
-function clicarBotao() {
-    document.querySelector('#perfil_menu_img').style.background = 'rgba(255, 255, 255, 0.5)'
-}
-
-function soltarBotao() {
-    document.querySelector('#perfil_menu_img').style.background = 'rgba(255, 255, 255, 0.3)'
-}
-
-function sairBotao() {
-    document.querySelector('#perfil_menu_img').style.background = 'none'
-}
-
-function entrarBotao() {
-    document.querySelector('#perfil_menu_img').style.background = 'rgba(255, 255, 255, 0.3)'
 }

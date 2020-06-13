@@ -1,0 +1,91 @@
+/*--Parte de Conteúdo da página------------------------------------------------------------------------------------*/
+
+section#corpo {
+    background: white;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+section#corpo div#banner {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    background: url('../_imagens/background_tech_icons_blue_white_2400x1800.png');
+    background-size: 150%;
+    margin-bottom: 150px;
+}
+
+section#corpo div#banner hgroup#titulos_banner {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Orbitron', sans-serif;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 4%;
+    color: #30508c;
+    margin-right: 5%;
+}
+
+section#corpo div#banner hgroup#titulos_banner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 10vw;
+}
+
+section#corpo div#banner hgroup#titulos_banner h2 {
+    font-weight: 400;
+    margin-top: 0;
+    font-size: 3.3vw;
+}
+
+section#corpo div#banner div#review_banner {
+    display: inline-block;
+    margin-top: 15%;
+    text-align: center;
+    margin-left: 5%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    padding-bottom: 24px;
+    border: 4px dashed #5b94ff;
+    margin-bottom: -150px;
+}
+
+section#corpo div#banner div#review_banner div#review_banner_info img {
+    width: 30vw;
+    max-width: 320px;
+    min-width: 200px;
+}
+
+section#corpo div#banner div#review_banner h2 {
+    background: rgb(255, 72, 0);
+    color: white;
+    margin-top: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+section#corpo div#banner div#review_banner div#review_banner_info h3 {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_destaque {
+    padding: 10px;
+    width: 100%;
+}
+
+section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_destaque tr {
+    padding: 5px;
+    box-shadow: 0px 1px black;
+}
+
+section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_destaque tr td.esq {
+    text-align: left;
+    font-weight: bold;
+}
+
+section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_destaque tr td.dir {
+    text-align: right;
+}

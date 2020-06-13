@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stromix Reviews</title>
     <link rel="stylesheet" href="_css/estilo.css"> <!--Estilo do site em geral!-->
+    <link rel="stylesheet" href="_css/estilo_index.css"> <!--Estilo da página principal-->
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     <!--Cabeçalho------------------------------------------------------------------------------------------------------------------------------>
 
     <header id="cabecalho">
-        <img src="_imagens/menu_white_34x34.png" alt="Perfil do Criador" id="perfil_menu_img" onclick="abrirFecharPerfil()" onmousedown="clicarBotao()" onmouseup="soltarBotao()" onmouseout="sairBotao()" onmouseover="entrarBotao()">
+        <img src="_imagens/menu_white_34x34.png" alt="Perfil do Criador" id="perfil_menu_img" onclick="abrirFecharPerfil()">
 
         <a href="index.html" id="home_link">
             <img src="_imagens/casinha_home_white_40x40.png" alt="Home" id="casinha_home_img">
@@ -56,7 +57,37 @@
     <!--Corpo---------------------------------------------------------------------------------------------------------------------------------->
 
     <section id="corpo">
-        <img src="" alt="Banner" id="banner_img">
+        <div id="banner">
+            <hgroup id="titulos_banner">
+                <h1>STROMIX</h1>
+                <h2>REVIEWS</h2>
+            </hgroup>
+            <div id="review_banner">
+                <h2>DESTAQUE</h2>
+                <div id="review_banner_info">
+                    <img src="_imagens/w820bt_perfil_300x300.png" alt="Edifier">
+                    <table id="tabela_review_destaque">
+                        <h3>W820<sup>BT</sup></h3>
+                        <tr>
+                            <td class="esq">Marca</td>
+                            <td class="dir">Edifier</td>
+                        </tr>
+                        <tr>
+                            <td class="esq">Conexões</td>
+                            <td class="dir">Bluetooth<br>P2</td>
+                        </tr>
+                        <tr>
+                            <td class="esq">Bateria</td>
+                            <td class="dir">80H</td>
+                        </tr>
+                        <tr>
+                            <td class="esq">Estilo</td>
+                            <td class="dir">Circun-aural</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
         <!--Principais Reviews----------------------------------------------------------------------------------------------------------------->
         <div class="reviews_destaques" id="review_destaque_w820bt">
             <img src="_imagens/w820bt_perfil_300x300.png" alt="Edifier W820BT" id="w820bt_review_img" class="reviews_img">
