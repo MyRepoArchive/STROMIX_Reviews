@@ -38,3 +38,33 @@ function abrirFecharPerfil() {
         estado = false
     }
 }
+
+var letraPeq = document.querySelector('#min')
+var letraMed = document.querySelector('#med')
+var letraMax = document.querySelector('#max')
+
+function fonte(tamanho) {
+    document.getElementsByTagName('body')[0].style.fontSize = tamanho
+    if(tamanho == '100%') {
+        letraPeq.style.background = 'white'
+        letraPeq.style.color = '#5b94ff'
+        letraMed.style.background = '#5b94ff'
+        letraMed.style.color = 'white'
+        letraMax.style.background = '#5b94ff'
+        letraMax.style.color = 'white'
+    } else if(tamanho == '130%') {
+        letraPeq.style.background = '#5b94ff'
+        letraPeq.style.color = 'white'
+        letraMed.style.background = 'white'
+        letraMed.style.color = '#5b94ff'
+        letraMax.style.background = '#5b94ff'
+        letraMax.style.color = 'white'
+    } else {
+        letraPeq.style.background = '#5b94ff'
+        letraPeq.style.color = 'white'
+        letraMed.style.background = '#5b94ff'
+        letraMed.style.color = 'white'
+        letraMax.style.background = 'white'
+        letraMax.style.color = '#5b94ff'
+    }
+}

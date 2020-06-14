@@ -61,16 +61,9 @@ section#corpo div.reviews_destaques {
     margin-bottom: 20px;
 }
 
-section#corpo div.reviews_destaques h2 {
-    background: rgb(255, 72, 0);
-    margin: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
 
-section#corpo div.reviews_destaques img#w820bt_review_img {
-    border-radius: 0px;
-}
+
+
 
 section#corpo div.reviews_destaques img{
     width: 25vw;
@@ -92,7 +85,7 @@ section#corpo div.reviews_destaques table.tabela_review_destaque {
 
 section#corpo div.reviews_destaques table.tabela_review_destaque tr {
     padding: 5px;
-    box-shadow: 0px 1px white;
+    box-shadow: 0px 1px 0px white;
 }
 
 section#corpo div.reviews_destaques table.tabela_review_destaque tr td.esq {
@@ -125,7 +118,7 @@ section#corpo div#informacoes_do_site {
     background: white;
     color: #4776ce;
     padding: 30px 10% 30px 10%;
-    font-size: 2vw;
+    font-size: 1.3em;
     text-align: justify;
 }
 

@@ -32,6 +32,45 @@ span#alerta img#fechar_alerta_img {
     border-radius: 100%;
 }
 
+/*--Ajuste de fonte-----------------------------------------------------------------------------------------------*/
+
+div#tamanho_fonte {
+    position: fixed;
+    right: 0px;
+    top: 40%;
+}
+
+div#tamanho_fonte p {
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+    background: #5b94ff;
+}
+
+div#tamanho_fonte p:hover {
+    background: #5b94ff48;
+    color: #5b94ff;
+}
+
+div#tamanho_fonte p#min {
+    font-size: 60%;
+    border-top-left-radius: 20px;
+}
+
+div#tamanho_fonte p#med {
+    font-size: 90%;
+    background: white;
+    color: #5b94ff;
+}
+
+div#tamanho_fonte p#max {
+    font-size: 120%;
+    border-bottom-left-radius: 20px;
+}
+
+div#tamanho_fonte hr {
+    margin: 0;
+}
+
 /*--Cabeçalho------------------------------------------------------------------------------------------------------------------------------*/
 
 header#cabecalho {
@@ -67,7 +106,7 @@ header#cabecalho h1#nome {
 
 aside#perfil_criador {
     background: repeating-linear-gradient(195deg, rgb(255, 255, 255), rgb(255, 255, 255) 300px, #5b94ff 1px, #5b94ff );
-    width: 281px;
+    width: 290px;
     color: white;
     border-bottom-right-radius: 20px;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
@@ -117,5 +156,5 @@ aside#perfil_criador a#link_codigo_fonte {
 /*--Rodapé----------------------------------------------------------------------------------------------------------------------------------*/
 
 footer#rodape {
-    font-size: 1.2vw;
+    font-size: 1.2em;
 }
