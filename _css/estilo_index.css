@@ -6,13 +6,15 @@ section#corpo {
     margin-right: -8px;
 }
 
+/*Banner grande da página*/
+
 section#corpo div#banner {
     padding-left: 5%;
     padding-right: 5%;
     text-align: left;
     background: url('../_imagens/background_tech_icons_blue_white_2400x1800.png');
     background-size: 150%;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
 
 section#corpo div#banner hgroup#titulos_banner {
@@ -71,21 +73,79 @@ section#corpo div#banner div#review_banner div#review_banner_info h3 {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.5);
 }
 
-section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_destaque {
+section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_banner {
     padding: 10px;
     width: 100%;
 }
 
-section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_destaque tr {
+section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_banner tr {
     padding: 5px;
     box-shadow: 0px 1px black;
 }
 
-section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_destaque tr td.esq {
+section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_banner tr td.esq {
     text-align: left;
     font-weight: bold;
 }
 
-section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_destaque tr td.dir {
+section#corpo div#banner div#review_banner div#review_banner_info table#tabela_review_banner tr td.dir {
     text-align: right;
+}
+
+/*Principais Reviews*/
+
+section#corpo div.review_destaque_full {
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    color: white;
+    margin: 0px 3vw 50px 3vw;
+}
+
+section#corpo div.reviews_destaques {
+    background: #5b94ff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border: 4px dashed white;
+    margin-bottom: 20px;
+}
+
+section#corpo div.reviews_destaques img{
+    width: 25vw;
+    min-width: 200px;
+    max-width: 400px;
+    background: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+section#corpo div.reviews_destaques h3 {
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5), 0px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+section#corpo div.reviews_destaques table.tabela_review_destaque {
+    width: 100%;
+    padding: 10px;
+}
+
+section#corpo div.reviews_destaques table.tabela_review_destaque tr {
+    padding: 5px;
+    box-shadow: 0px 1px white;
+}
+
+section#corpo div.reviews_destaques table.tabela_review_destaque tr td.esq {
+    text-align: left;
+    font-weight: bold;
+}
+
+section#corpo div.reviews_destaques table.tabela_review_destaque tr td.dir {
+    text-align: right;
+}
+
+section#corpo div.review_destaque_full a.link_review_destaque {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    background: #30508c;
+    border-radius: 20px;
 }
