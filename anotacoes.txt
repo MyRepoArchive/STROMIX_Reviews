@@ -9,5 +9,6 @@ Links:
 Cor de fundo da página: rgb(230, 230, 230)
 Cor de fundo aviso fixo no topo: rgba(255, 0, 0, 0.7)
 Cor de fundo cabecalho: rgb(0, 89, 255) e rgb(100, 155, 255)
-Cor de fundo Banner: #5b94ff
+Cor de fundo itens: #5b94ff
 Cor letra Banner: #30508c
+Cor de fundo Banner: #416cbc

@@ -63,11 +63,6 @@ header#cabecalho h1#nome {
     font-size: 2em;
 }
 
-header#cabecalho h1#nome span {
-    font-size: 0.6em;
-    font-weight: 400;
-}
-
 /*--Menu de perfil do criador--------------------------------------------------------------------------------------------------------------*/
 
 aside#perfil_criador {
@@ -94,6 +89,7 @@ aside#perfil_criador img#perfil_criador_img {
 aside#perfil_criador table#info_criador {
     padding-left: 10px;
     padding-right: 10px;
+    width: 100%;
 }
 
 aside#perfil_criador table tr td {
@@ -109,3 +105,17 @@ aside#perfil_criador table tr td.dir {
     text-align: right;
 }
 
+aside#perfil_criador table tr td.dir a {
+    color: white;
+}
+
+aside#perfil_criador a#link_codigo_fonte {
+    color: 
+    white;
+}
+
+/*--Rodapé----------------------------------------------------------------------------------------------------------------------------------*/
+
+footer#rodape {
+    font-size: 1.2vw;
+}

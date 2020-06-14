@@ -13,11 +13,9 @@ let nomeSite = document.querySelector('#nome')
 if(screen.width < 409 && screen.width >= 326) {
     nomeSite.style.fontSize = '20pt'
     nomeSite.style.marginTop = '-52px'
-    nomeSite.getElementsByTagName('span')[0].style.fontSize = '12pt'
 } else if(screen.width < 326) {
     nomeSite.style.fontSize = '17pt'
     nomeSite.style.marginTop = '-48px'
-    nomeSite.getElementsByTagName('span')[0].style.fontSize = '8pt'
 }
 
 //Mostra a idade correta do criador de acordo com o ano
