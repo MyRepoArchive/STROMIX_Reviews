@@ -1,0 +1,62 @@
+section#corpo {
+    background: white;
+    margin-left: -8px;
+    margin-right: -8px;
+    color: #4776ce;
+    padding: 30px 10% 30px 10%;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+section#corpo h1 {
+    text-align: center;
+    border: 2px solid #30508c;
+}
+
+section#corpo h1.nome_produto {
+    font-size: 2em;
+}
+
+section#corpo p {
+    text-indent: 5%;
+}
+
+section#corpo a {
+    color: #5b94ff;
+}
+
+section#corpo figure.imagens_reviews {
+    width: 75vw;
+    margin: 0 auto auto auto;
+}
+
+section#corpo figure.imagens_reviews img.imagens_reviews_img {
+    width: 75vw;
+}
+
+section#corpo table {
+    border: 2px solid #30508c;
+    padding: 1%;
+    width: 110%;
+    margin-left: -5%;
+    margin-right: -5%;
+}
+
+section#corpo table td {
+    border-bottom: 2px solid #30508c;
+}
+
+section#corpo table td.esq {
+    font-weight: bold;
+    text-align: left;
+}
+
+section#corpo table td.dir {
+    text-align: right;
+}
+
+section#corpo figure.imagens_reviews legend {
+    text-align: right;
+    color: black;
+    font-size: 0.6em;
+}

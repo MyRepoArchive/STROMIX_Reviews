@@ -39,20 +39,22 @@ function abrirFecharPerfil() {
     }
 }
 
+//ajuste da fonte
+
 var letraPeq = document.querySelector('#min')
 var letraMed = document.querySelector('#med')
 var letraMax = document.querySelector('#max')
 
 function fonte(tamanho) {
     document.getElementsByTagName('body')[0].style.fontSize = tamanho
-    if(tamanho == '100%') {
+    if(tamanho == '80%') {
         letraPeq.style.background = 'white'
         letraPeq.style.color = '#5b94ff'
         letraMed.style.background = '#5b94ff'
         letraMed.style.color = 'white'
         letraMax.style.background = '#5b94ff'
         letraMax.style.color = 'white'
-    } else if(tamanho == '130%') {
+    } else if(tamanho == '110%') {
         letraPeq.style.background = '#5b94ff'
         letraPeq.style.color = 'white'
         letraMed.style.background = 'white'

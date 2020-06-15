@@ -9,7 +9,7 @@
 body {
     background: rgb(230, 230, 230);
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 130%;
+    font-size: 110%;
     text-align: center;
 }
 
@@ -44,6 +44,7 @@ div#tamanho_fonte p {
     padding: 10px 10px 10px 10px;
     margin: 0;
     background: #5b94ff;
+    color: white;
 }
 
 div#tamanho_fonte p:hover {
@@ -98,6 +99,7 @@ header#cabecalho h1#nome {
     text-align: center;
     margin-top: -60px;
     margin-left: 60px;
+    margin-bottom: 0;
     font-family: 'Orbitron', sans-serif;
     font-size: 2em;
 }
