@@ -1,0 +1,97 @@
+section#corpo {
+    background: white;
+    margin-left: -8px;
+    margin-right: -8px;
+    color: #4776ce;
+    padding: 30px 0% 30px 0%;
+    font-size: 1.3em;
+}
+
+div#escolha_reviews p{
+    border: 1px solid #4776ce;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  
+div#escolha_reviews p#principais {
+    background: #4776ce;
+    display: inline-block;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+div#escolha_reviews p#todos {
+    background: white;
+    display: inline-block;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #4776ce;
+}
+
+
+section#corpo div.review_full {
+    text-align: center;
+    vertical-align: bottom;
+    display: inline-block;
+    color: white;
+    margin: 0px 3vw 50px 3vw;
+}
+
+section#corpo div.reviews {
+    background: #5b94ff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border: 4px dashed white;
+    margin-bottom: 20px;
+}
+
+section#corpo div.reviews img{
+    width: 25vw;
+    min-width: 200px;
+    max-width: 500px;
+    background: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+section#corpo div.reviews h3 {
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5), 0px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+section#corpo div.reviews table.tabela_review {
+    width: 100%;
+    padding: 10px;
+}
+
+section#corpo div.reviews table.tabela_review tr {
+    padding: 5px;
+    box-shadow: 0px 1px 0px white;
+}
+
+section#corpo div.reviews table.tabela_review tr td.esq {
+    text-align: left;
+    font-weight: bold;
+}
+
+section#corpo div.reviews table.tabela_review tr td.dir {
+    text-align: right;
+}
+
+section#corpo div.review_full a.link_review {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    background: #30508c;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+section#corpo div.review_full a.link_review:hover {
+    background: #4776ce;
+}
+
+section#corpo div.review_full a.link_review:active {
+    background: #1c3053;
+}

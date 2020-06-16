@@ -13,7 +13,7 @@ img#expandida_img {
 
 img#expandida_background_img {
     position: fixed;
-    width: 100vw;
+    width: 100vmax;
     margin: auto;
     left: 0;
     display: none;
@@ -54,6 +54,13 @@ section#corpo h1.nome_produto {
 
 section#corpo p {
     text-indent: 5%;
+}
+
+section#corpo p#autor {
+    font-size: 0.7em;
+    text-indent: 0;
+    float: right;
+    margin-top: -45px;
 }
 
 section#corpo a {
@@ -102,6 +109,16 @@ section#corpo section#review {
     min-width: 200px;
 }
 
+section#corpo section#review audio.audio {
+    width: 100%;
+}
+
+section#corpo section#review iframe#video_review {
+    width: 100%;
+    height: 30vw;
+    min-height: 120px
+}
+
 section#corpo aside#outros_reviews {
     display: inline-block;
     min-width: 90px;
@@ -128,6 +145,8 @@ section#corpo aside#outros_reviews div.reviews_lateral {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     border: 4px dashed white;
     margin-bottom: 20px;
+    width: 85%;
+    margin-left: 6%;
 }
 
 section#corpo aside#outros_reviews div.reviews_lateral img{
