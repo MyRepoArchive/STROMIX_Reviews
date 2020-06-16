@@ -1,7 +1,35 @@
 img#expandida_img {
-    background-size: 100%;
-    background: rgba(0, 0, 0, 0.5);
     position: fixed;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    max-width: 90%;
+    max-height: 90%;
+    zoom: 2;
+    display: none;
+}
+
+img#expandida_background_img {
+    position: fixed;
+    width: 100vw;
+    margin: auto;
+    left: 0;
+    display: none;
+}
+
+img#fechar_expandida {
+    position: fixed;
+    right: 1vw;
+    top: 1vw;
+    padding: 10px;
+    border-radius: 100%;
+    display: none;
+}
+
+img#fechar_expandida:active {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 section#corpo {

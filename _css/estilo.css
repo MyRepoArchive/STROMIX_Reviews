@@ -32,6 +32,10 @@ span#alerta img#fechar_alerta_img {
     border-radius: 100%;
 }
 
+span#alerta img#fechar_alerta_img:active {
+    background: rgba(255, 255, 255, 0.5);
+}
+
 /*--Ajuste de fonte-----------------------------------------------------------------------------------------------*/
 
 div#tamanho_fonte {
@@ -84,6 +88,10 @@ header#cabecalho {
 
 header#cabecalho img:hover{
     background: rgba(255, 255, 255, 0.3);
+}
+
+header#cabecalho img:active {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 header#cabecalho img#perfil_menu_img {

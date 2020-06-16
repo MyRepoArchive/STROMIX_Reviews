@@ -1,11 +1,5 @@
 function fecharAlerta() { //fecha o alerta do topo
-    document.querySelector('#fechar_alerta_img').style.background = 'rgba(255, 255, 255, 0.5)'//coloca um background esbraquiçado na imagem de "X"
-    document.querySelector('#fechar_alerta_img').style.transition = '50ms'//Delay de 50milisegundos entre o background estar invisível até ele ficar completamente visível
-    setTimeout(//seta um tempo de espera antes de executar o comando! Neste caso de 50milisegundos
-        function() {
-            document.querySelector('#alerta').style.display = 'none' //Deixa o alerta como não mostrado na página, atravez da linha de style "display: none;"
-        }, 50 //tempo do "setTimeout"
-    )
+    document.querySelector('#alerta').style.display = 'none'
 }
 
 //Aqui ajusta o tamanho do nome do site de acordo com a resolução da tela em que está sendo exibido o código!
