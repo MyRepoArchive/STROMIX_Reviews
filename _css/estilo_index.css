@@ -61,14 +61,10 @@ section#corpo div.reviews_destaques {
     margin-bottom: 20px;
 }
 
-
-
-
-
 section#corpo div.reviews_destaques img{
     width: 25vw;
     min-width: 200px;
-    max-width: 400px;
+    max-width: 500px;
     background: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
