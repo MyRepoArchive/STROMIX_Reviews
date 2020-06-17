@@ -3,6 +3,11 @@ if(window.innerWidth <= 360) {
     document.querySelector('#corpo').style.paddingBottom = alturaAside+'px'
 }
 
+//Melhor exibição em smartphones
+if(window.innerWidth <= 500) {
+    document.querySelector('#review').style.width = '100%'
+}
+
 //Expandir imagens
 function expandirImagem(url) {
     document.querySelector('#expandida_img').src = url

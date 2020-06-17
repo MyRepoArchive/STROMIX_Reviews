@@ -104,7 +104,7 @@ section#corpo table td.dir {
 }
 
 section#corpo section#review {
-    width: 60%;
+    width: 70%;
     display: inline-block;
     min-width: 200px;
 }
@@ -122,7 +122,7 @@ section#corpo section#review iframe#video_review {
 section#corpo aside#outros_reviews {
     display: inline-block;
     min-width: 90px;
-    width: 30%;
+    width: 20%;
     font-size: 0.8em;
     vertical-align: top;
     float: right;
