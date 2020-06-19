@@ -1,11 +1,8 @@
-var alturaAside = document.querySelector('#outros_reviews').clientHeight
-if(window.innerWidth <= 360) {
-    document.querySelector('#corpo').style.paddingBottom = alturaAside+'px'
-}
-
 //Melhor exibição em smartphones
+var alturaAside = document.querySelector('#outros_reviews').clientHeight
 if(window.innerWidth <= 500) {
     document.querySelector('#review').style.width = '100%'
+    document.querySelector('#corpo').style.paddingBottom = alturaAside+'px'
 }
 
 //Expandir imagens

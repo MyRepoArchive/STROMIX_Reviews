@@ -77,6 +77,21 @@ section#corpo figure.imagens_reviews img.imagens_reviews_img {
     border: 4px solid #30508c;
 }
 
+section#corpo figure#album {
+    text-align: center;
+}
+
+section#corpo img.album_design_w820bt {
+    width: 10vw;
+    height: 10vw;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid #30508c;
+}
+
+section#corpo img.album_design_w820bt:hover {
+    box-shadow: none;
+}
+
 section#corpo figure.imagens_reviews legend {
     text-align: right;
     color: black;
