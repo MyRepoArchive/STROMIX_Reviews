@@ -59,8 +59,8 @@ section#corpo p {
 section#corpo p#autor {
     font-size: 0.7em;
     text-indent: 0;
-    float: right;
     margin-top: -30px;
+    text-align: right;
 }
 
 section#corpo a {
