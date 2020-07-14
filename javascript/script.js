@@ -2,65 +2,33 @@ function fecharAlerta() { //fecha o alerta do topo
     document.querySelector('#alerta').style.display = 'none'
 }
 
-//Aqui ajusta o tamanho do nome do site de acordo com a resolução da tela em que está sendo exibido o código!
-let nomeSite = document.querySelector('#nome')
-if(screen.width < 409 && screen.width >= 326) {
-    nomeSite.style.fontSize = '20pt'
-    nomeSite.style.marginTop = '-52px'
-} else if(screen.width < 326) {
-    nomeSite.style.fontSize = '17pt'
-    nomeSite.style.marginTop = '-48px'
-}
-
-//Mostra a idade correta do criador de acordo com o ano
-const data = new Date()
-if(data.getUTCMonth() < 5) {
-    document.querySelector('#idade_direita').innerHTML = `${data.getFullYear() - 2005}`
-} else {
-    document.querySelector('#idade_direita').innerHTML = `${data.getFullYear() - 2004}`
-}
-
-//Mostra ou esconde o menu do perfil do criador
-var estado = false
-var perfil = document.querySelector('#perfil_criador')
-function abrirFecharPerfil() {
-    if(estado == false) {
-        perfil.style.display = 'block'
-        estado = true
+//Aparecer e esconder menu
+var menuStt = false
+function abrirFecharMenu() {
+    if(menuStt == false) {
+        document.querySelector('#menu').style.display = 'block'
+        menuStt = true
     } else {
-        perfil.style.display = 'none'
-        estado = false
+        document.querySelector('#menu').style.display = 'none'
+        menuStt = false
     }
 }
+
 
 //ajuste da fonte
 
-var letraPeq = document.querySelector('#min')
-var letraMed = document.querySelector('#med')
-var letraMax = document.querySelector('#max')
+var letraPeq = document.querySelector('#letra_min')
+var letraMed = document.querySelector('#letra_med')
+var letraMax = document.querySelector('#leta_max')
 
 function fonte(tamanho) {
     document.getElementsByTagName('body')[0].style.fontSize = tamanho
-    if(tamanho == '80%') {
-        letraPeq.style.background = 'white'
-        letraPeq.style.color = '#5b94ff'
-        letraMed.style.background = '#5b94ff'
-        letraMed.style.color = 'white'
-        letraMax.style.background = '#5b94ff'
-        letraMax.style.color = 'white'
-    } else if(tamanho == '110%') {
-        letraPeq.style.background = '#5b94ff'
-        letraPeq.style.color = 'white'
-        letraMed.style.background = 'white'
-        letraMed.style.color = '#5b94ff'
-        letraMax.style.background = '#5b94ff'
-        letraMax.style.color = 'white'
-    } else {
-        letraPeq.style.background = '#5b94ff'
-        letraPeq.style.color = 'white'
-        letraMed.style.background = '#5b94ff'
-        letraMed.style.color = 'white'
-        letraMax.style.background = 'white'
-        letraMax.style.color = '#5b94ff'
-    }
+}
+
+
+//Função de verificar arquivo que está sendo exibido na tela
+function verificarArquivo(url) {
+    url = url.replace(/\/g/, "/")
+    var arquivo = url.substring(url.lastIndexOf('/') + 1)
+    return arquivo
 }

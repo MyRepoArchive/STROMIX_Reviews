@@ -2,8 +2,8 @@
 
 section#corpo {
     background: white;
-    margin-left: -8px;
-    margin-right: -8px;
+    margin: -8px -8px 0px -8px;
+    padding-bottom: 5%;
 }
 
 /*Banner grande da página*/
@@ -11,61 +11,90 @@ section#corpo {
 section#corpo div#banner {
     padding-left: 5%;
     padding-right: 5%;
-    text-align: left;
-    background: url('../image/background_tech_icons_blue_white_2400x1800.png');
-    background-size: 150%;
+    text-align: center;
+    background: url('../image/banner.webp');
+    background-size: auto 100%;
+    padding-bottom: 10%;
     margin-bottom: 5%;
-    height: 100vh;
+    min-height: 80vh;
+    user-select: none;
 }
 
 section#corpo div#banner hgroup#titulos_banner {
     display: inline-block;
     vertical-align: top;
     font-family: 'Orbitron', sans-serif;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    margin-top: 4%;
-    color: #30508c;
-    margin-right: 5%;
+    margin-top: 20vh;
+    margin-bottom: 20px;
+    color: white;
 }
 
 section#corpo div#banner hgroup#titulos_banner h1 {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 10vw;
+    font-size: 140px;
+    text-shadow: 5px 5px 10px black;
 }
 
 section#corpo div#banner hgroup#titulos_banner h2 {
     font-weight: 400;
-    margin-top: 0;
-    font-size: 3.3vw;
+    margin: 0;
+    font-size: 46.2px;
 }
 
-/*Seleciona entre principais reviews e todos*/
-
-div#escolha_reviews p{
-    border: 1px solid #4776ce;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-  
-div#escolha_reviews p#principais {
-    background: white;
-    display: inline-block;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    color: #4776ce;
+section#corpo div#banner section {
+    text-align: center;
 }
 
-div#escolha_reviews p#todos {
-    background: #4776ce;
-    display: inline-block;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+section#corpo div#banner section h2#e_rev {
     color: white;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 8px black;
+    padding: 0px 15px 0px 15px;
+}
+
+section#corpo div#banner section button {
+    font-size: 2em;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    background-position-y: 30%;
+    background-position-x: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+}
+
+section#corpo div#banner section button:hover {background: rgba(0,0,0,0.5);}
+
+@media(max-width: 499px) {
+    section#corpo div#banner hgroup#titulos_banner h1 {
+        font-size: 15vw;
+    }
+
+    section#corpo div#banner hgroup#titulos_banner h2 {
+        font-size: 4vw;
+    }
+
+    section#corpo div#banner section button {
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 1400px) and (min-width: 500px) {
+    section#corpo div#banner hgroup#titulos_banner h1 {
+        font-size: 10vw;
+    }
+
+    section#corpo div#banner hgroup#titulos_banner h2 {
+        font-size: 3.3vw;
+    }
+
+    section#corpo div#banner section button {
+        font-size: 1.3em;
+    }
 }
 
 /*Principais Reviews*/
@@ -82,14 +111,17 @@ section#corpo div.reviews_destaques {
     background: #5b94ff;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    border: 4px dashed white;
+    border: 4px solid white;
     margin-bottom: 20px;
 }
 
+section#corpo div.reviews_destaques h2 {
+    margin: 10px;
+    font-size: 1em;
+}
+
 section#corpo div.reviews_destaques img{
-    width: 25vw;
-    min-width: 200px;
-    max-width: 500px;
+    width: 200px;
     background: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -97,6 +129,7 @@ section#corpo div.reviews_destaques img{
 
 section#corpo div.reviews_destaques h3 {
     box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5), 0px -2px 5px rgba(255, 255, 255, 0.5);
+    margin: 0;
 }
 
 section#corpo div.reviews_destaques table.tabela_review_destaque {
@@ -135,22 +168,94 @@ section#corpo div.review_destaque_full a.link_review_destaque:active {
     background: #1c3053;
 }
 
+
+/*Todos os Reviews*/
+
+section#corpo div#todos_reviews {
+    display: none;
+}
+
+section#corpo div#todos_reviews div.review_full {
+    border: 1px solid rgba(0,0,0,0.2);
+    display: inline-block;
+    max-width: 200px;
+}
+
+section#corpo div#todos_reviews div.review_full a:link {
+    color: #5b94ff;
+}
+
+section#corpo div#todos_reviews div.review_full a:visited {
+    color: #30508c;
+}
+
+section#corpo div#todos_reviews div.review img.img_review {
+    width: 180px;
+}
+
+section#corpo div#todos_reviews div.review section h3 {
+    max-width: 180px;
+    padding: 0px 5px 0px 5px;
+    margin-top: 0;
+}
+
+/*Informações do site*/
+
 section#corpo div#informacoes_do_site {
-    color: #4776ce;
+    color: white;
     padding: 30px 10% 30px 10%;
     font-size: 1.3em;
+    text-align: center;
+}
+
+section#corpo div#informacoes_do_site article {
+    display: inline-block;
+    width: 40%;
+    background: #4776ce;
+    margin: 40px;
+    vertical-align: top;
+    border-radius: 20px;
+    padding: 20px 0px;
     text-align: justify;
 }
 
 section#corpo div#informacoes_do_site h1 {
     text-align: center;
-    border: 2px solid #30508c;
 }
 
 section#corpo div#informacoes_do_site p {
     text-indent: 5%;
+    padding: 0px 50px;
 }
 
 section#corpo div#informacoes_do_site a {
     color: #5b94ff;
+}
+
+@media (max-width: 1100px) {
+    section#corpo div#informacoes_do_site article {
+        width: 90%;
+        margin: 0px;
+        margin-bottom: 40px;
+    }
+
+    section#corpo div#informacoes_do_site p {
+        padding: 0px 30px;
+    }
+}
+
+@media (min-width: 2000px) {
+    section#corpo div#informacoes_do_site article {
+        width: 25%;
+    }
+}
+
+@media (max-width: 460px) {
+    section#corpo div#informacoes_do_site article {
+        width: 100%;
+    }
+
+    section#corpo div#informacoes_do_site p {
+        padding: 0px 10px;
+    }
 }

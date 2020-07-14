@@ -14,55 +14,22 @@
         <img src="image/fechar_black_20x20.png" alt="Fechar Alerta" id="fechar_alerta_img" onclick="fecharAlerta()">
     </span>-->
 
-    <!--Ajuste de fonte---------------------------------------------------------------------------------------------------------------------->
-
-    <div id="tamanho_fonte">
-        <p id="min" onclick="fonte('80%')">A</p><hr>
-        <p id="med" onclick="fonte('110%')">A</p><hr>
-        <p id="max" onclick="fonte('140%')">A</p>
-    </div>
-
     <!--Cabeçalho------------------------------------------------------------------------------------------------------------------------------>
 
     <header id="cabecalho">
-        <img src="image/menu_white_34x34.png" alt="Perfil do Criador" id="perfil_menu_img" onclick="abrirFecharPerfil()">
-
-        <a href="index.html" id="home_link">
-            <img src="image/casinha_home_white_40x40.png" alt="Home" id="casinha_home_img">
-        </a>
-
-        <h1 id="nome">Stromix</h1>
+        <div class="cabecalho_buttons" id="engrenagem_cabecalho" onclick="abrirFecharMenu()">&#9881;</div>
+        <a href="index.html" id="home_link"><div class="cabecalho_buttons">Home</div></a>
+        <a href="#rodape" id="contato_link"><div class="cabecalho_buttons">Contato</div></a>
     </header>
 
-    <!--Menu de perfil do criador-------------------------------------------------------------------------------------------------------------->
-
-    <aside id="perfil_criador">
-        <h1>Perfil do Criador</h1>
-        <img src="image/joao_victor_perfil_191x230.jpg" alt="Foto de perfil criador" id="perfil_criador_img">
-
-        <h3>João Victor</h3> <!--Nome do criador-->
-        <table id="info_criador"> <!--Informações técnicas do criador-->
-            <tr id="idade"><td id="idade_esquerda" class="esq">Idade</td><td id="idade_direita" class="dir">[IDADE]</td></tr> <!--Idade do criador com base na data atual-->
-            <tr id="outros_projetos"><td id="outros_projetos_esquerda" class="esq">Outros projetos</td><td id="outros_projetos_direita" class="dir"><a target="_blank" id="link_repositorios" href="https://github.com/JoaoSCoelho?tab=repositories">github/<br>repositories</a></td></tr>
-            <tr id="localizacao"><td id="localizacao_esquerda" class="esq">Localização</td><td id="localizacao_direita" class="dir">Bahia</td></tr>
-            <tr id="especialidade"><td id="especialidade_esquerda" class="esq">Especialidade</td><td id="especialidade_direita" class="dir">Web</td></tr>
-        </table>
-
-        <h3>Código-fonte do site</h3>
-        <p><b>GitHub:</b> <a target="_blank" href="https://github.com/JoaoSCoelho/STROMIX_Reviews" id="link_codigo_fonte">Código-fonte</a></p>
-
-        <h3>Contato</h3>
-        <p>joaovictor-san-co@hotmail.com</p>
-
-        <h3>Redes Sociais</h3>
-        <div id="redes_sociais">
-            <a target="_blank" href="https://discord.gg/8WjyW8u" id="link_discord" class="link_redes_sociais"><img src="image/logo_discord_blue_50x50.png" alt="Discord" id="logo_discord_img" class="logo_redes_sociais"></a>
-            <a target="_blank" href="https://www.facebook.com/joao.coelho.7543653/" id="link_facebook" class="link_redes_sociais"><img src="image/logo_facebook_blue_50x50.png" alt="Facebook" id="logo_facebook_img" class="logo_redes_sociais"></a>
-            <a target="_blank" href="https://github.com/JoaoSCoelho" id="link_github" class="link_redes_sociais"><img src="image/logo_github_black_50x50.png" alt="GitHub" id="logo_github_img" class="logo_redes_sociais"></a>
-            <a target="_blank" href="https://www.instagram.com/joao_victor.s.c/" id="link_instagram" class="link_redes_sociais"><img src="image/logo_instagram_purple_50x50.png" alt="Instagram" id="logo_instagram_img" class="logo_redes_sociais"></a>
-            <a target="_blank" href="https://twitter.com/Victor26192375" id="link_twitter" class="link_redes_sociais"><img src="image/logo_twitter_blue_50x50.png" alt="Twitter" id="logo_twitter_img" class="logo_redes_sociais"></a>
-            <a target="_blank" href="https://www.youtube.com/channel/UCgj8kDTo0O1UUKvlkm7n49g?view_as=subscriber" id="link_youtube" class="link_redes_sociais"><img src="image/logo_youtube_red_50x50.png" alt="Youtube" id="logo_youtube_img" class="logo_redes_sociais"></a>
-        </div>
+    <!--Menu de configurações------------------------------------------------------------------------------------------------------------------->
+    
+    <!--Ajuste da fonte-->
+    <aside id="menu">
+        <h3>Fonte</h3>
+        <input type="button" value="Min" id="letra_min" class="selecionar_tamanho_fonte" onclick="fonte('70%')">
+        <input type="button" value="Med" id="letra_med" class="selecionar_tamanho_fonte" onclick="fonte('100%')">
+        <input type="button" value="Max" id="letra_max" class="selecionar_tamanho_fonte" onclick="fonte('130%')">
     </aside>
 
     <!--Corpo---------------------------------------------------------------------------------------------------------------------------------->
@@ -73,95 +40,155 @@
                 <h1>STROMIX</h1>
                 <h2>REVIEWS</h2>
             </hgroup>
+            <section>
+                <div id="escolha_reviews">
+                    <a href="#principais_reviews"><button class="escolha_Reviews_button" id="escolha_principal" onclick="tiposReviews('principais')">Principais</button></a>
+                    <a href="#todos_reviews"><button class="escolha_Reviews_button" id="escolha_todos" onclick="tiposReviews('todos')">Todos</button></a>
+                </div>
+            </section>
         </div>
 
-        <div id="escolha_reviews">
-            <p id="principais">Principais</p><a href="reviews.html"><p id="todos">Todos</p></a>
-        </div>
         <!--Principais Reviews----------------------------------------------------------------------------------------------------------------->
-        <div class="review_destaque_full">
-            <div class="reviews_destaques" id="review_destaque_w820bt">
-                <h2>DESTAQUE</h2>
-                <img src="image/w820bt_perfil_400x618.webp" alt="Edifier W820BT" id="w820bt_review_img" class="reviews_img">
-                <table id="tabela_review_destaque_w820bt" class="tabela_review_destaque">
-                    <h3>W820<sup>BT</sup></h3>
-                    <tr>
-                        <td class="esq">Marca</td>
-                        <td class="dir">Edifier</td>
-                    </tr>
-                    <tr>
-                        <td class="esq">Conexões</td>
-                        <td class="dir">Bluetooth<br>P2</td>
-                    </tr>
-                    <tr>
-                        <td class="esq">Bateria</td>
-                        <td class="dir">80H</td>
-                    </tr>
-                    <tr>
-                        <td class="esq">Estilo</td>
-                        <td class="dir">Circumaural</td>
-                    </tr>
-                </table>
+        <div id="principais_reviews">
+            <div class="review_destaque_full">
+                <div class="reviews_destaques" id="review_destaque_w820bt">
+                    <h2>DESTAQUE</h2>
+                    <img src="image/w820bt_perfil_200x240.webp" alt="Edifier W820BT" id="w820bt_review_img" class="reviews_img">
+                    <table id="tabela_review_destaque_w820bt" class="tabela_review_destaque">
+                        <h3>W820<sup>BT</sup></h3>
+                        <tr>
+                            <td class="esq">Marca</td>
+                            <td class="dir">Edifier</td>
+                        </tr>
+                        <tr>
+                            <td class="esq">Conexões</td>
+                            <td class="dir">Bluetooth<br>P2</td>
+                        </tr>
+                        <tr>
+                            <td class="esq">Bateria</td>
+                            <td class="dir">80H</td>
+                        </tr>
+                        <tr>
+                            <td class="esq">Estilo</td>
+                            <td class="dir">Circumaural</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="w820bt.html" id="link_review_destaque_w820bt" class="link_review_destaque">VER REVIEW</a>
             </div>
-            <a href="w820bt.html" id="link_review_destaque_w820bt" class="link_review_destaque">VER REVIEW</a>
+    
+            <!--<div class="review_destaque_full">
+                <div class="reviews_destaques" id="review_destaque_vc-g200">
+                    <img src="image/vc-g200_perfil_400x612.webp" alt="VoxCube VC-G200" id="vc-g200_review_img" class="reviews_img">
+                    <table id="tabela_review_destaque_vc-g200" class="tabela_review_destaque">
+                        <h3>VC-G200</h3>
+                        <tr>
+                            <td class="esq">Marca</td>
+                            <td class="dir">VoxCube</td>
+                        </tr>
+                        <tr>
+                            <td class="esq">Conexões</td>
+                            <td class="dir">P2</td>
+                        </tr>
+                        <tr>
+                            <td class="esq">Potência</td>
+                            <td class="dir">11W Rms</td>
+                        </tr>
+                        <tr>
+                            <td class="esq">Alimentação</td>
+                            <td class="dir">USB 5V</td>
+                        </tr>
+                        <tr>
+                            <td class="esq">Peso</td>
+                            <td class="dir">800g</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="vc-g200.html" id="link_review_destaque_vc-g200" class="link_review_destaque">VER REVIEW</a>
+            </div>-->
         </div>
 
-        <!--<div class="review_destaque_full">
-            <div class="reviews_destaques" id="review_destaque_vc-g200">
-                <img src="image/vc-g200_perfil_400x612.webp" alt="VoxCube VC-G200" id="vc-g200_review_img" class="reviews_img">
-                <table id="tabela_review_destaque_vc-g200" class="tabela_review_destaque">
-                    <h3>VC-G200</h3>
-                    <tr>
-                        <td class="esq">Marca</td>
-                        <td class="dir">VoxCube</td>
-                    </tr>
-                    <tr>
-                        <td class="esq">Conexões</td>
-                        <td class="dir">P2</td>
-                    </tr>
-                    <tr>
-                        <td class="esq">Potência</td>
-                        <td class="dir">11W Rms</td>
-                    </tr>
-                    <tr>
-                        <td class="esq">Alimentação</td>
-                        <td class="dir">USB 5V</td>
-                    </tr>
-                    <tr>
-                        <td class="esq">Peso</td>
-                        <td class="dir">800g</td>
-                    </tr>
-                </table>
+        <!--Todos os Reviews------------------------------------------------------------------------------------------------------------------->
+
+        <div id="todos_reviews">
+            <div class="review_full" id="review_w820bt_full">
+                <a href="w820bt.html" id="link_review_w820bt" class="link_review">
+                    <div id="review_w820bt" class="review">
+                        <img src="image/w820bt_perfil_200x240.webp" alt="W820BT" class="img_review">
+                        <section id="info_review_w820bt" class="info_review">
+                            <h3 id="nome_review_w820bt" class="nome_review">HeadPhone Bluetooth W820BT - Edifier</h3>
+                        </section>
+                    </div>
+                </a>
             </div>
-            <a href="vc-g200.html" id="link_review_destaque_vc-g200" class="link_review_destaque">VER REVIEW</a>
-        </div>-->
+        </div>
+
         <!--Informações do Site---------------------------------------------------------------------------------------------------------------->
         <div id="informacoes_do_site">
-            <div id="o_que_e_um_review" class="titulo_paragrafo">
+            <article id="o_que_e_um_review" class="artigo_informacoes_do_site">
                 <h1>O que é um <b>Review</b></h1>
                 <p>É, não podemos descartar a possibilidade de você não saber o que é um review, até porque ninguém sabe tudo, né? Mas, se você ainda não sabe o que é um review, não se preocupe, iremos explicar!</p>
                 <p>Review é uma palavra em inglês que se traduzida diretamente, significa <i>rever</i>, mas que também pode ser traduzida para <i>revisar, inspecionar, a análise, a crítica,</i> etc. Como é visto em sua tradução, <b>review</b> que dizer revisar algo, e é exatamente o que fazemos aqui, revisamos algum produto para lhe auxiliar em uma possível compra, ou apenas por curiosidade mesmo.</p>
-            </div>
-            <div id="como_sao_feitos_os_reviews" class="titulo_paragrafo">
+            </article>
+            <article id="como_sao_feitos_os_reviews" class="artigo_informacoes_do_site">
                 <h1>Como são feitos os Reviews?</h1>
                 <p>Agora que você já sabe o que é um review, vamos ver como as coisas funcionam por aqui. Na <b>Stromix Reviews</b> as análises de cada produto são feitas com muita atenção para sua compreensão, afinal de contas, de que adianta ler um review inteiro e no fim sair sem entender como é  usar o produto? Aqui nós trabalhamos muito antes de postar um review, todas as imagens, textos, tópicos são pensados para melhor lhe atender!</p>
                 <p>Há todo um processo até termos um review digno de ser postado. Os reviews começam a ser produzidos desde a entrega da encomenda em nossas mãos, onde é analisada a experiência de <a target="_blank" href="https://pt.wikipedia.org/wiki/Unboxing#:~:text=Unboxing%20%C3%A9%20um%20termo%20em,12%20de%20junho%20de%202006.">unboxing</a>, depois colocamos em prática alguns testes condizentes com o perfil do produto, e então o usamos para oferecer o ponto de vista do usuário para você!</p>
-            </div>
-            <div id="topicos" class="titulo_paragrafo"></div>
+            </article>
+            <article id="topicos" class="artigo_informacoes_do_site">
                 <h1>Tópicos</h1>
                 <p>Tópicos... ahh os tópicos, bom, tópicos são um recurso simples mas bastante funcional e que ajuda um bocado na compreensão de uma matéria, reportagem ou nesse caso, um Review. Todos os nossos reviews são separados em tópicos, que geralmente começam com impressões iniciais e acabam em conclusões, e nesse meio termo há tópicos que dividem as características dos produtos e facilitam o seu entendimento. Como exemplo de tópico, podemos citar <i>Ficha Técnica</i> que vai reunir todas as informações técnicas disponíveis para o produto em um único lugar, ela também é uma das coisas mais buscadas pelos possíveis compradores daquele item.</p>
-            </div>
+            </article>
         </div>
     </section>
 
     <!--Rodapé--------------------------------------------------------------------------------------------------------------------------------->
 
     <footer id="rodape">
-        <p>Copyright &copy; 2020 - By João Victor</p>
+        
+        <aside id="redes_sociais_esq" class="redes_sociais">
+            <a href="https://discord.gg/8WjyW8u" target="_blank"><img src="image/logo_discord_blue_50x50.png" alt="Logo Discord">
+                <p>
+                	Stromix Reviews
+                </p>
+            </a><br/>
+            <a href="https://www.facebook.com/joao.coelho.7543653/" target="_blank"><img src="image/logo_facebook_blue_50x50.png" alt="Logo Facebook">
+                <p>
+                	João Coelho
+                </p>
+            </a><br/>
+            <a href="https://github.com/JoaoSCoelho" target="_blank"><img src="image/logo_github_black_50x50.png" alt="Logo GitHub">
+                <p>
+                	JoaoSCoelho
+                </p>
+            </a><br/>
+        </aside>
+        <aside id="redes_sociais_dir" class="redes_sociais">
+            <a href="https://www.instagram.com/joao_victor.s.c/" target="_blank"><p>
+            	joao_victor.s.c
+            </p>
+                <img src="image/logo_instagram_purple_50x50.png" alt="Logo Instagram">
+            </a><br/>
+            <a href="https://twitter.com/Victor26192375" target="_blank"><p>
+            	Victor26192375
+            </p>
+                <img src="image/logo_twitter_blue_50x50.png" alt="Logo Twitter">
+            </a><br/>
+            <a href="https://www.youtube.com/channel/UCgj8kDTo0O1UUKvlkm7n49g?view_as=subscriber" target="_blank"><p>
+            	O Stromix
+            </p>
+                <img src="image/logo_youtube_red_50x50.png" alt="Logo Youtube">
+            </a>
+        </aside>
+        <div id="copy_contatos">
+            <p id="copyright">Copyright &copy; 2020 - By João Victor</p>
+            <p id="email_contato">Email: joaovictor-san-co@hotmail.com&nbsp;&nbsp;&nbsp; <a href="https://github.com/joaoscoelho/STROMIX_Reviews" target="_blank">Código-fonte</a></p>
+        </div>
     </footer>
 
     <!--ScriptArea----------------------------------------------------------------------------------------------------------------------------->
 
     <script src="javascript/script.js"></script>
+    <script src="javascript/index.js"></script>
 </body>
 </html>
