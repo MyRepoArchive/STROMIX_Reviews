@@ -1,4 +1,4 @@
-/*--Parte de Conteúdo da página------------------------------------------------------------------------------------*/
+/*--Parte de Conteúdo da página--------------------------------------------------------------------------------------------------------------*/
 
 section#corpo {
     background: white;
@@ -6,7 +6,7 @@ section#corpo {
     padding-bottom: 5%;
 }
 
-/*Banner grande da página*/
+/*--Banner grande da página------------------------------------------------------------------------------------------------------------------*/
 
 section#corpo div#banner {
     padding-left: 5%;
@@ -20,7 +20,9 @@ section#corpo div#banner {
     user-select: none;
 }
 
-section#corpo div#banner hgroup#titulos_banner {
+/*Nome do site no banner--------------------------------------------------------------------------------------------------------------------*/
+
+section#corpo div#banner hgroup#titulos_banner { 
     display: inline-block;
     vertical-align: top;
     font-family: 'Orbitron', sans-serif;
@@ -43,15 +45,7 @@ section#corpo div#banner hgroup#titulos_banner h2 {
     font-size: 46.2px;
 }
 
-section#corpo div#banner section {
-    text-align: center;
-}
-
-section#corpo div#banner section h2#e_rev {
-    color: white;
-    text-shadow: 2px 2px 8px black;
-    padding: 0px 15px 0px 15px;
-}
+/*--Botões de escolha de quais reviews serão exibidos----------------------------------------------------------------------------------------*/
 
 section#corpo div#banner section button {
     font-size: 2em;
@@ -70,6 +64,9 @@ section#corpo div#banner section button {
 section#corpo div#banner section button:hover {background: rgba(0,0,0,0.5);}
 
 @media(max-width: 499px) {
+
+    /*--Nome do site no banner---------------------------------------------------------------------------------------------------------------*/
+
     section#corpo div#banner hgroup#titulos_banner h1 {
         font-size: 15vw;
     }
@@ -78,12 +75,17 @@ section#corpo div#banner section button:hover {background: rgba(0,0,0,0.5);}
         font-size: 4vw;
     }
 
+    /*--Botões de escolha de quais reviews serão exibidos-------------------------------------------------------------------------------------*/
+
     section#corpo div#banner section button {
         font-size: 0.8em;
     }
 }
 
 @media(max-width: 1400px) and (min-width: 500px) {
+
+    /*--Nome do site no banner---------------------------------------------------------------------------------------------------------------*/
+
     section#corpo div#banner hgroup#titulos_banner h1 {
         font-size: 10vw;
     }
@@ -92,12 +94,14 @@ section#corpo div#banner section button:hover {background: rgba(0,0,0,0.5);}
         font-size: 3.3vw;
     }
 
+    /*--Botões de escolha de quais reviews serão exibidos-------------------------------------------------------------------------------------*/
+
     section#corpo div#banner section button {
         font-size: 1.3em;
     }
 }
 
-/*Principais Reviews*/
+/*Principais Reviews--------------------------------------------------------------------------------------------------------------------------*/
 
 section#corpo div.review_destaque_full {
     text-align: center;
@@ -169,7 +173,7 @@ section#corpo div.review_destaque_full a.link_review_destaque:active {
 }
 
 
-/*Todos os Reviews*/
+/*Todos os Reviews----------------------------------------------------------------------------------------------------------------------------*/
 
 section#corpo div#todos_reviews {
     display: none;
@@ -199,7 +203,7 @@ section#corpo div#todos_reviews div.review section h3 {
     margin-top: 0;
 }
 
-/*Informações do site*/
+/*Informações do site-------------------------------------------------------------------------------------------------------------------------*/
 
 section#corpo div#informacoes_do_site {
     color: white;
@@ -219,38 +223,47 @@ section#corpo div#informacoes_do_site article {
     text-align: justify;
 }
 
-section#corpo div#informacoes_do_site h1 {
+section#corpo div#informacoes_do_site article h1 {
     text-align: center;
 }
 
-section#corpo div#informacoes_do_site p {
+section#corpo div#informacoes_do_site article p {
     text-indent: 5%;
     padding: 0px 50px;
 }
 
-section#corpo div#informacoes_do_site a {
+section#corpo div#informacoes_do_site article a {
     color: #5b94ff;
 }
 
 @media (max-width: 1100px) {
+
+    /*--Informações do site------------------------------------------------------------------------------------------------------------------*/
+
     section#corpo div#informacoes_do_site article {
         width: 90%;
         margin: 0px;
         margin-bottom: 40px;
     }
 
-    section#corpo div#informacoes_do_site p {
+    section#corpo div#informacoes_do_site article p {
         padding: 0px 30px;
     }
 }
 
 @media (min-width: 2000px) {
+
+    /*--Informações do Site ------------------------------------------------------------------------------------------------------------------*/
+
     section#corpo div#informacoes_do_site article {
         width: 25%;
     }
 }
 
 @media (max-width: 460px) {
+
+    /*--Informações do Site------------------------------------------------------------------------------------------------------------------*/
+
     section#corpo div#informacoes_do_site article {
         width: 100%;
     }

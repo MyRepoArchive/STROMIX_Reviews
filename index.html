@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stromix Reviews</title>
-    <link rel="stylesheet" href="css/estilo.css"> <!--Estilo do site em geral!-->
-    <link rel="stylesheet" href="css/estilo_index.css"> <!--Estilo da página principal-->
+    <link rel="stylesheet" href="css/estilo.css"> <!--Estilo do site em geral!----------------------------------------------------------------->
+    <link rel="stylesheet" href="css/estilo_index.css"> <!--Estilo da página principal--------------------------------------------------------->
 </head>
 
 <body>
@@ -17,30 +17,34 @@
     <!--Cabeçalho------------------------------------------------------------------------------------------------------------------------------>
 
     <header id="cabecalho">
-        <div class="cabecalho_buttons" id="engrenagem_cabecalho" onclick="abrirFecharMenu()">&#9881;</div>
+        <div class="cabecalho_buttons" id="engrenagem_cabecalho" onclick="abrirFecharMenu()">&#9881;</div> <!--Engrenagem de configurações-->
         <a href="index.html" id="home_link"><div class="cabecalho_buttons">Home</div></a>
         <a href="#rodape" id="contato_link"><div class="cabecalho_buttons">Contato</div></a>
     </header>
 
     <!--Menu de configurações------------------------------------------------------------------------------------------------------------------->
     
-    <!--Ajuste da fonte-->
     <aside id="menu">
-        <h3>Fonte</h3>
-        <input type="button" value="Min" id="letra_min" class="selecionar_tamanho_fonte" onclick="fonte('70%')">
-        <input type="button" value="Med" id="letra_med" class="selecionar_tamanho_fonte" onclick="fonte('100%')">
-        <input type="button" value="Max" id="letra_max" class="selecionar_tamanho_fonte" onclick="fonte('130%')">
+        <div id="tamanho_fonte"><!--Ajuste da fonte--------------------------------------------------------------------------------------------->
+            <h3>Fonte</h3>
+            <input type="button" value="Min" id="letra_min" class="selecionar_tamanho_fonte" onclick="fonte('70%')">
+            <input type="button" value="Med" id="letra_med" class="selecionar_tamanho_fonte" onclick="fonte('100%')">
+            <input type="button" value="Max" id="letra_max" class="selecionar_tamanho_fonte" onclick="fonte('130%')">
+        </div>
+
+
     </aside>
 
     <!--Corpo---------------------------------------------------------------------------------------------------------------------------------->
 
     <section id="corpo">
-        <div id="banner">
-            <hgroup id="titulos_banner">
+        <div id="banner"> <!--Banner----------------------------------------------------------------------------------------------------------->
+            <hgroup id="titulos_banner"> <!--Nome do Site no banner---------------------------------------------------------------------------->
                 <h1>STROMIX</h1>
                 <h2>REVIEWS</h2>
             </hgroup>
-            <section>
+
+            <section> <!--Escolha de quais reviews serão exibidos na tela---------------------------------------------------------------------->
                 <div id="escolha_reviews">
                     <a href="#principais_reviews"><button class="escolha_Reviews_button" id="escolha_principal" onclick="tiposReviews('principais')">Principais</button></a>
                     <a href="#todos_reviews"><button class="escolha_Reviews_button" id="escolha_todos" onclick="tiposReviews('todos')">Todos</button></a>
@@ -49,13 +53,19 @@
         </div>
 
         <!--Principais Reviews----------------------------------------------------------------------------------------------------------------->
+        
         <div id="principais_reviews">
-            <div class="review_destaque_full">
+
+            <div class="review_destaque_full"> <!--Review do W820BT destacado------------------------------------------------------------------>
                 <div class="reviews_destaques" id="review_destaque_w820bt">
                     <h2>DESTAQUE</h2>
-                    <img src="image/w820bt_perfil_200x240.webp" alt="Edifier W820BT" id="w820bt_review_img" class="reviews_img">
-                    <table id="tabela_review_destaque_w820bt" class="tabela_review_destaque">
-                        <h3>W820<sup>BT</sup></h3>
+
+                    <img src="image/w820bt_perfil_200x240.webp" alt="Edifier W820BT" id="w820bt_review_img" class="reviews_img"> <!--Imagem do W820BT-->
+
+                    <table id="tabela_review_destaque_w820bt" class="tabela_review_destaque"> <!--Informações prévias do review do W820BT------>
+                        
+                        <h3>W820<sup>BT</sup></h3> <!--Nome do produto (w820bt neste caso)-->
+                        
                         <tr>
                             <td class="esq">Marca</td>
                             <td class="dir">Edifier</td>
@@ -72,80 +82,70 @@
                             <td class="esq">Estilo</td>
                             <td class="dir">Circumaural</td>
                         </tr>
+                    
                     </table>
                 </div>
-                <a href="w820bt.html" id="link_review_destaque_w820bt" class="link_review_destaque">VER REVIEW</a>
+
+                <a href="w820bt.html" id="link_review_destaque_w820bt" class="link_review_destaque">VER REVIEW</a><!--Link para acessar o review-->
             </div>
     
-            <!--<div class="review_destaque_full">
-                <div class="reviews_destaques" id="review_destaque_vc-g200">
-                    <img src="image/vc-g200_perfil_400x612.webp" alt="VoxCube VC-G200" id="vc-g200_review_img" class="reviews_img">
-                    <table id="tabela_review_destaque_vc-g200" class="tabela_review_destaque">
-                        <h3>VC-G200</h3>
-                        <tr>
-                            <td class="esq">Marca</td>
-                            <td class="dir">VoxCube</td>
-                        </tr>
-                        <tr>
-                            <td class="esq">Conexões</td>
-                            <td class="dir">P2</td>
-                        </tr>
-                        <tr>
-                            <td class="esq">Potência</td>
-                            <td class="dir">11W Rms</td>
-                        </tr>
-                        <tr>
-                            <td class="esq">Alimentação</td>
-                            <td class="dir">USB 5V</td>
-                        </tr>
-                        <tr>
-                            <td class="esq">Peso</td>
-                            <td class="dir">800g</td>
-                        </tr>
-                    </table>
-                </div>
-                <a href="vc-g200.html" id="link_review_destaque_vc-g200" class="link_review_destaque">VER REVIEW</a>
-            </div>-->
+
         </div>
 
         <!--Todos os Reviews------------------------------------------------------------------------------------------------------------------->
 
         <div id="todos_reviews">
-            <div class="review_full" id="review_w820bt_full">
-                <a href="w820bt.html" id="link_review_w820bt" class="link_review">
+
+            <div class="review_full" id="review_w820bt_full"> <!--Toda a área ocupada pelo review---------------------------------------------->
+
+                <a href="w820bt.html" id="link_review_w820bt" class="link_review"> <!--Link para acesso do review (w820bt neste caso)---------->
                     <div id="review_w820bt" class="review">
-                        <img src="image/w820bt_perfil_200x240.webp" alt="W820BT" class="img_review">
+
+                        <img src="image/w820bt_perfil_200x240.webp" alt="W820BT" class="img_review"> <!--Imagem do W820BT---------------------->
+
                         <section id="info_review_w820bt" class="info_review">
                             <h3 id="nome_review_w820bt" class="nome_review">HeadPhone Bluetooth W820BT - Edifier</h3>
                         </section>
+
                     </div>
                 </a>
+
             </div>
+
+
+
         </div>
 
+
         <!--Informações do Site---------------------------------------------------------------------------------------------------------------->
+
         <div id="informacoes_do_site">
-            <article id="o_que_e_um_review" class="artigo_informacoes_do_site">
-                <h1>O que é um <b>Review</b></h1>
+
+            <article id="o_que_e_um_review" class="artigo_informacoes_do_site"> <!--Artigo----------------------------------------------------->
+                <h1>O que é um <b>Review</b></h1> <!--Título do primeiro artigo---------------------------------------------------------------->
                 <p>É, não podemos descartar a possibilidade de você não saber o que é um review, até porque ninguém sabe tudo, né? Mas, se você ainda não sabe o que é um review, não se preocupe, iremos explicar!</p>
                 <p>Review é uma palavra em inglês que se traduzida diretamente, significa <i>rever</i>, mas que também pode ser traduzida para <i>revisar, inspecionar, a análise, a crítica,</i> etc. Como é visto em sua tradução, <b>review</b> que dizer revisar algo, e é exatamente o que fazemos aqui, revisamos algum produto para lhe auxiliar em uma possível compra, ou apenas por curiosidade mesmo.</p>
             </article>
-            <article id="como_sao_feitos_os_reviews" class="artigo_informacoes_do_site">
-                <h1>Como são feitos os Reviews?</h1>
+
+            <article id="como_sao_feitos_os_reviews" class="artigo_informacoes_do_site"> <!--Artigo-------------------------------------------->
+                <h1>Como são feitos os Reviews?</h1> <!--Título do segundo artigo-------------------------------------------------------------->
                 <p>Agora que você já sabe o que é um review, vamos ver como as coisas funcionam por aqui. Na <b>Stromix Reviews</b> as análises de cada produto são feitas com muita atenção para sua compreensão, afinal de contas, de que adianta ler um review inteiro e no fim sair sem entender como é  usar o produto? Aqui nós trabalhamos muito antes de postar um review, todas as imagens, textos, tópicos são pensados para melhor lhe atender!</p>
                 <p>Há todo um processo até termos um review digno de ser postado. Os reviews começam a ser produzidos desde a entrega da encomenda em nossas mãos, onde é analisada a experiência de <a target="_blank" href="https://pt.wikipedia.org/wiki/Unboxing#:~:text=Unboxing%20%C3%A9%20um%20termo%20em,12%20de%20junho%20de%202006.">unboxing</a>, depois colocamos em prática alguns testes condizentes com o perfil do produto, e então o usamos para oferecer o ponto de vista do usuário para você!</p>
             </article>
-            <article id="topicos" class="artigo_informacoes_do_site">
-                <h1>Tópicos</h1>
+
+            <article id="topicos" class="artigo_informacoes_do_site"> <!--Artigo--------------------------------------------------------------->
+                <h1>Tópicos</h1> <!--Título do terceiro artigo--------------------------------------------------------------------------------->
                 <p>Tópicos... ahh os tópicos, bom, tópicos são um recurso simples mas bastante funcional e que ajuda um bocado na compreensão de uma matéria, reportagem ou nesse caso, um Review. Todos os nossos reviews são separados em tópicos, que geralmente começam com impressões iniciais e acabam em conclusões, e nesse meio termo há tópicos que dividem as características dos produtos e facilitam o seu entendimento. Como exemplo de tópico, podemos citar <i>Ficha Técnica</i> que vai reunir todas as informações técnicas disponíveis para o produto em um único lugar, ela também é uma das coisas mais buscadas pelos possíveis compradores daquele item.</p>
             </article>
+
         </div>
+
     </section>
 
     <!--Rodapé--------------------------------------------------------------------------------------------------------------------------------->
 
     <footer id="rodape">
-        
+        <!--Redes sociais---------------------------------------------------------------------------------------------------------------------->
         <aside id="redes_sociais_esq" class="redes_sociais">
             <a href="https://discord.gg/8WjyW8u" target="_blank"><img src="image/logo_discord_blue_50x50.png" alt="Logo Discord">
                 <p>
@@ -180,6 +180,9 @@
                 <img src="image/logo_youtube_red_50x50.png" alt="Logo Youtube">
             </a>
         </aside>
+
+        <!--Copyright, contato por email e código fonte da página------------------------------------------------------------------------------>
+
         <div id="copy_contatos">
             <p id="copyright">Copyright &copy; 2020 - By João Victor</p>
             <p id="email_contato">Email: joaovictor-san-co@hotmail.com&nbsp;&nbsp;&nbsp; <a href="https://github.com/joaoscoelho/STROMIX_Reviews" target="_blank">Código-fonte</a></p>
@@ -188,7 +191,8 @@
 
     <!--ScriptArea----------------------------------------------------------------------------------------------------------------------------->
 
-    <script src="javascript/script.js"></script>
-    <script src="javascript/index.js"></script>
+    <script src="javascript/script.js"></script> <!--Script do site todo----------------------------------------------------------------------->
+    <script src="javascript/index.js"></script> <!--Script apenas dessa página----------------------------------------------------------------->
+
 </body>
 </html>
