@@ -1,7 +1,6 @@
 /*--Fontes-----------------------------------------------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
 
 /*--Corpo Total-----------------------------------------------------------------------------------------------------------*/
@@ -48,6 +47,10 @@ header#cabecalho {
     z-index: 2;
 }
 
+header#cabecalho a {
+    text-decoration: none;
+}
+
 header#cabecalho div.cabecalho_buttons {
     display: inline-block;
     color: white;
@@ -67,6 +70,75 @@ header#cabecalho div#engrenagem_cabecalho {
     position: fixed;
     left: 2%;
     top: -2px;
+    margin-top: 30px;
+}
+
+header#cabecalho div#engrenagem_cabecalho svg, header#cabecalho div#contato_icon svg {
+    height: 1.5em;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+header#cabecalho div#engrenagem_cabecalho svg:hover path{
+    stroke-width: 25;
+}
+
+header#cabecalho div#engrenagem_cabecalho svg:hover {
+    transform: rotate(180deg);
+    transition: 500ms;
+}
+
+header#cabecalho div#logomarca {
+    position: fixed;
+    left: 7%;
+    top: -5px;
+    margin-top: 30px;
+    cursor: default;
+}
+
+header#cabecalho div#logomarca svg, header#cabecalho div#logomarca_centro svg {
+    height: 1.8em;
+}
+
+header#cabecalho div#logomarca_centro svg {
+    height: 2.5em;
+}
+
+header#cabecalho div#logomarca span {
+    font-size: 1.5em;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    vertical-align: top;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+header#cabecalho div#logomarca_centro {
+    margin-top: 20px;
+    display: none;
+    margin-bottom: 20px;
+}
+
+header#cabecalho div#contato_icon {
+    position: fixed;
+    right: 2%;
+    top: -5px;
+    margin-top: 30px;
+    display: none;
+}
+
+header#cabecalho div#contato_icon svg:hover path {
+    stroke-width: 6;
+    stroke: white;
+}
+
+@media (max-width: 800px) {
+    header#cabecalho div#home_button, header#cabecalho div#contato_button, header#cabecalho div#logomarca {
+        display: none;
+    }
+
+    header#cabecalho div#logomarca_centro, header#cabecalho div#contato_icon {
+        display: inline-block;
+    }
 }
 
 /*--Menu de perfil do criador--------------------------------------------------------------------------------------------------------------*/
@@ -120,8 +192,10 @@ footer#rodape aside#redes_sociais_dir {
     text-align: right;
 }
 
-footer#rodape aside.redes_sociais img {
-    zoom: 0.3;
+footer#rodape aside.redes_sociais svg {
+    height: 2em;
+    vertical-align: -.5em;
+    display: inline-block;
 }
 
 footer#rodape aside.redes_sociais a {
@@ -160,13 +234,14 @@ footer#rodape aside.redes_sociais a p {
         text-align: left;
     }
 
-    footer#rodape aside#redes_sociais_esq img {
+    footer#rodape aside#redes_sociais_esq svg {
         float: right;
-        vertical-align: top;
+        vertical-align: -.5em;
     }
 
-    footer#rodape aside#redes_sociais_dir img {
+    footer#rodape aside#redes_sociais_dir svg {
         float: left;
+        vertical-align: -.5em;
     }
 }
 
@@ -186,12 +261,27 @@ footer#rodape aside.redes_sociais a p {
         text-align: left;
     }
 
-    footer#rodape aside#redes_sociais_esq img {
-        vertical-align: top;
+    footer#rodape aside#redes_sociais_esq svg {
+        vertical-align: -.5em;
     }
 
-    footer#rodape aside#redes_sociais_dir img {
+    footer#rodape aside#redes_sociais_dir svg {
         float: left;
+    }
+}
+
+@media (max-width: 275px) {
+    footer#rodape aside.redes_sociais a p {
+        display: none;
+    }
+
+    footer#rodape aside#redes_sociais_esq {
+        margin-right: 5px;
+    }
+
+    footer#rodape aside#redes_sociais_dir {
+        vertical-align: top;
+        margin-left: 5px;
     }
 }
 
@@ -219,4 +309,8 @@ footer#rodape div#copy_contatos a:hover {
 
 footer#rodape p#copyright {
     font-size: 1.3em;
+}
+
+footer#rodape p a {
+    color: white;
 }

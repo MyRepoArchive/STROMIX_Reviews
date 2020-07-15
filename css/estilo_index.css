@@ -12,8 +12,8 @@ section#corpo div#banner {
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
-    background: url('../image/banner.webp');
-    background-size: auto 100%;
+    background: url('../image/banner.jpg');
+    background-size: auto 105vmax;
     padding-bottom: 10%;
     margin-bottom: 5%;
     min-height: 80vh;
@@ -87,11 +87,11 @@ section#corpo div#banner section button:hover {background: rgba(0,0,0,0.5);}
     /*--Nome do site no banner---------------------------------------------------------------------------------------------------------------*/
 
     section#corpo div#banner hgroup#titulos_banner h1 {
-        font-size: 10vw;
+        font-size: 8vw;
     }
 
     section#corpo div#banner hgroup#titulos_banner h2 {
-        font-size: 3.3vw;
+        font-size: 2.5vw;
     }
 
     /*--Botões de escolha de quais reviews serão exibidos-------------------------------------------------------------------------------------*/
@@ -112,11 +112,16 @@ section#corpo div.review_destaque_full {
 }
 
 section#corpo div.reviews_destaques {
-    background: #5b94ff;
+    background: linear-gradient(to bottom right, rgb(70, 181, 233), rgb(0, 83, 192));
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    border: 4px solid white;
+    border: 4px solid rgb(238, 238, 238);
     margin-bottom: 20px;
+}
+
+section#corpo div.reviews_destaques:hover {
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
+    transition: 50ms;
 }
 
 section#corpo div.reviews_destaques h2 {
@@ -159,17 +164,17 @@ section#corpo div.review_destaque_full a.link_review_destaque {
     text-decoration: none;
     color: white;
     padding: 15px 30px 15px 30px;
-    background: #30508c;
+    background: #1c508b;
     border-radius: 20px;
     font-weight: bold;
 }
 
 section#corpo div.review_destaque_full a.link_review_destaque:hover {
-    background: #4776ce;
+    background: #2673cc;
 }
 
 section#corpo div.review_destaque_full a.link_review_destaque:active {
-    background: #1c3053;
+    background: #0c3855;
 }
 
 
@@ -183,6 +188,12 @@ section#corpo div#todos_reviews div.review_full {
     border: 1px solid rgba(0,0,0,0.2);
     display: inline-block;
     max-width: 200px;
+    background: rgba(216, 216, 216, 0.2);
+}
+
+section#corpo div#todos_reviews div.review_full:hover {
+    transition: 200ms;
+    background: rgba(216, 216, 216, 0.4);
 }
 
 section#corpo div#todos_reviews div.review_full a:link {
@@ -215,7 +226,7 @@ section#corpo div#informacoes_do_site {
 section#corpo div#informacoes_do_site article {
     display: inline-block;
     width: 40%;
-    background: #4776ce;
+    background: linear-gradient(to bottom right, rgb(0, 140, 255), rgb(0, 83, 192));
     margin: 40px;
     vertical-align: top;
     border-radius: 20px;
@@ -233,7 +244,7 @@ section#corpo div#informacoes_do_site article p {
 }
 
 section#corpo div#informacoes_do_site article a {
-    color: #5b94ff;
+    color: white;
 }
 
 @media (max-width: 1100px) {
@@ -241,7 +252,7 @@ section#corpo div#informacoes_do_site article a {
     /*--Informações do site------------------------------------------------------------------------------------------------------------------*/
 
     section#corpo div#informacoes_do_site article {
-        width: 90%;
+        width: 80%;
         margin: 0px;
         margin-bottom: 40px;
     }
@@ -264,8 +275,13 @@ section#corpo div#informacoes_do_site article a {
 
     /*--Informações do Site------------------------------------------------------------------------------------------------------------------*/
 
+    section#corpo div#informacoes_do_site {
+        padding: 30px 0px 30px 0px;
+    }
+
     section#corpo div#informacoes_do_site article {
         width: 100%;
+        border-radius: 0px;
     }
 
     section#corpo div#informacoes_do_site p {
