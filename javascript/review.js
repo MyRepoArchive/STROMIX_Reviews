@@ -12,6 +12,7 @@ function fecharExpandida() {
     document.querySelector('#expandida_background_img').style.display = 'none'
 }
 
+
 //Função de verificar arquivo que está sendo exibido na tela
 function verificarArquivo(url) {
     url = url.replace(/\/g/, "/")

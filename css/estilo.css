@@ -12,29 +12,6 @@ body {
     text-align: center;
 }
 
-/*--Alerta fixo no topo da página-------------------------------------------------------------------------------------------------------------*/
-
-span#alerta {
-    position: fixed;
-    background: rgba(255, 0, 0, 0.7);
-    left: 0px;
-    right: 0px;
-    padding: 5px 0px 5px 0px;
-    margin: 0px;
-}
-
-span#alerta img#fechar_alerta_img {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    padding: 5px;
-    border-radius: 100%;
-}
-
-span#alerta img#fechar_alerta_img:active {
-    background: rgba(255, 255, 255, 0.5);
-}
-
 
 /*--Cabeçalho------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -141,7 +118,7 @@ header#cabecalho div#contato_icon svg:hover path {
     }
 }
 
-/*--Menu de perfil do criador--------------------------------------------------------------------------------------------------------------*/
+/*--Menu de configurações---------------------------------------------------------------------------------------------------------------------*/
 
 aside#menu {
     position: fixed;
@@ -285,7 +262,7 @@ footer#rodape aside.redes_sociais a p {
     }
 }
 
-/*------------*/
+/*--Copyright, email e código fonte ---------------------------------------------------------------------------------------------------------*/
 
 footer#rodape div#copy_contatos {
     text-align: center;
