@@ -1,3 +1,5 @@
+/*------Imagem expandida ---------------------------------------------------------------------------------------------------------------------*/
+
 img#expandida_img {
     position: fixed;
     margin: auto;
@@ -9,14 +11,17 @@ img#expandida_img {
     max-height: 90%;
     zoom: 2;
     display: none;
+    z-index: 3;
 }
 
 img#expandida_background_img {
     position: fixed;
-    width: 100vmax;
+    width: 1000vmax;
     margin: auto;
     left: 0;
     display: none;
+    z-index: 2;
+    top: 0;
 }
 
 img#fechar_expandida {
@@ -26,70 +31,85 @@ img#fechar_expandida {
     padding: 10px;
     border-radius: 100%;
     display: none;
+    z-index: 3;
 }
 
 img#fechar_expandida:active {
     background: rgba(255, 255, 255, 0.5);
 }
 
+/*---Corpo do site-------------------------------------------------------------------------------------------------------------------------*/
+
 section#corpo {
     background: white;
     margin-left: -8px;
     margin-right: -8px;
-    color: #4776ce;
+    color: rgb(114, 114, 114);
     padding: 75px 10% 30px 10%;
     font-size: 1.3em;
-    text-align: justify;
-}
-
-section#corpo h1 {
     text-align: center;
-    border: 2px solid #30508c;
+    margin-top: -8px;
 }
 
-section#corpo h1.nome_produto {
+section#corpo h1#nome_review {
     font-size: 2em;
-    margin-top: 0;
+    color: rgb(70, 70, 70);
 }
 
-section#corpo p {
-    text-indent: 5%;
+figure#imagem_principal {
+    margin: 0;
+    text-align: center;
+}
+
+figure#imagem_principal img {
+    width: 100%;
 }
 
 section#corpo p#autor {
     font-size: 0.7em;
     text-indent: 0;
-    margin-top: -30px;
+    margin-top: 0px;
     text-align: right;
 }
 
-section#corpo a {
-    color: #5b94ff;
+/*--Aqui começa a estilização do review em si-----------------------------------------------------------------------------------------------*/
+
+section#corpo section#review {
+    text-align: justify;
+    width: 70%;
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+section#corpo section#review h2 {
+    color: rgb(70, 70, 70);
+    text-align: center;
+}
+
+section#corpo section#review p {
+    text-indent: 5%;
+}
+
+section#corpo section#review p.alinhamento_esquerda {
+    margin: 0;
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+    font-size: 1.5vw;
+}
+
+section#corpo section#review a {
+    color: rgb(114, 114, 114);
 }
 
 section#corpo figure.imagens_reviews {
-    width: 90%;
-    margin: 0 auto auto auto;
+    margin: 0;
 }
 
 section#corpo figure.imagens_reviews img.imagens_reviews_img {
     width: 100%;
-    border: 4px solid #30508c;
-}
-
-section#corpo figure#album {
-    text-align: center;
-}
-
-section#corpo img.album_design_w820bt {
-    width: 10vw;
-    height: 10vw;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    border: 2px solid #30508c;
-}
-
-section#corpo img.album_design_w820bt:hover {
-    box-shadow: none;
+    border: 1px solid rgb(70, 70, 70);
 }
 
 section#corpo figure.imagens_reviews legend {
@@ -98,15 +118,52 @@ section#corpo figure.imagens_reviews legend {
     font-size: 0.6em;
 }
 
+section#corpo figure.imagens_reviews_direita {
+    margin: 0;
+    display: inline-block;
+    width: 43%;
+    text-align: right;
+}
+
+section#corpo figure.imagens_reviews_direita img.imagens_reviews_img {
+    width: 95%;
+    border: 1px solid rgb(70,70,70);
+    display: inline-block;
+    position: relative;
+    right: 0px;
+}
+
+@media (max-width: 800px) {
+    section#corpo section#review p.alinhamento_esquerda {
+        margin: 1em 0px 1em 0px;
+        display: block;
+        width: auto;
+        font-size: 1em;
+    }
+
+    section#corpo figure.imagens_reviews_direita {
+        margin: 0;
+        width: auto;
+        text-align: justify;
+    }
+
+    section#corpo figure.imagens_reviews_direita img.imagens_reviews_img {
+        width: 100%;
+        border: 1px solid rgb(70,70,70);
+        position: inherit;
+    }
+}
+
 section#corpo table {
-    border: 2px solid #30508c;
-    padding: 1%;
     width: 100%;
     font-size: 0.8em;
+    background: linear-gradient(to bottom right, rgb(179, 179, 179), rgb(136, 136, 136));
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
 }
 
 section#corpo table td {
-    border-bottom: 2px solid #30508c;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 section#corpo table td.esq {
@@ -118,10 +175,27 @@ section#corpo table td.dir {
     text-align: right;
 }
 
-section#corpo section#review {
-    width: 70%;
-    display: inline-block;
-    min-width: 200px;
+section#corpo table.meia_tabela td#ver_mais_meia_tabela {
+    text-align: center;
+    border-bottom: none;
+}
+
+section#corpo table.meia_tabela td#ver_mais_meia_tabela:hover {
+    color: rgb(0, 89, 255);
+}
+
+@media (max-width: 800px) {
+    table.tabela_inteira {
+        display: none;
+    }
+
+    table.meia_tabela {
+        display: block;
+    }
+
+    table.meia_tabela td.dir {
+        width: 60%;
+    }
 }
 
 section#corpo section#review audio.audio {

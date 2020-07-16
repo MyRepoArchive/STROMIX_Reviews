@@ -45,6 +45,7 @@ header#cabecalho {
     background: linear-gradient(to bottom, rgba(34, 35, 36, 0.7), rgba(0,0,0,0));
     left: 0;
     z-index: 2;
+    top: 0;
 }
 
 header#cabecalho a {
@@ -92,7 +93,6 @@ header#cabecalho div#logomarca {
     left: 7%;
     top: -5px;
     margin-top: 30px;
-    cursor: default;
 }
 
 header#cabecalho div#logomarca svg, header#cabecalho div#logomarca_centro svg {
