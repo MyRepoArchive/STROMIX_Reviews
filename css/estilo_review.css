@@ -16,11 +16,11 @@ img#expandida_img {
 
 img#expandida_background_img {
     position: fixed;
-    width: 1000vmax;
+    width: 200vmax;
     margin: auto;
     left: 0;
     display: none;
-    z-index: 2;
+    z-index: 3;
     top: 0;
 }
 
